@@ -1,0 +1,36 @@
+S3method(asNumericIfPossible, logical)
+S3method(asNumericIfPossible, numeric)
+S3method(asNumericIfPossible, character)
+S3method(asNumericIfPossible, factor)
+S3method(asNumericIfPossible, data.frame)
+export(set.col.type)
+# eatModel usage
+export(multiseq)
+export(halveString)
+export(gsubAll)
+export(num.to.cat)
+export(insert.col)
+export(whereAre)
+
+# eatGADS usage
+export(catch_asNumericIfPossible)
+
+# eatRep usage
+export(existsBackgroundVariables)
+export(removePattern)
+export(facToChar)
+export(crop)
+export(tableUnlist)
+export(removeNumeric)
+export(removeNonNumeric)
+export(asNumericIfPossible)
+export(tablePattern)
+export(descr)
+export(wideToLong)
+export(contr.wec.weighted)
+export(wtdTable)
+export(wtdVar)
+
+### imports
+importFrom("stats", weighted.mean, median, na.omit, sd, var, t.test, contr.treatment)
+import("data.table")
