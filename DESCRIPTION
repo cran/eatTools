@@ -2,10 +2,10 @@ Package: eatTools
 Type: Package
 Title: Miscellaneous Functions for the Analysis of Educational
         Assessments
-Version: 0.3.6
+Version: 0.3.8
 Depends: R (>= 3.5.0)
 Imports: stats, data.table
-Date: 2020-09-10
+Date: 2020-10-19
 Authors@R: c(
     person("Sebastian", "Weirich", email = "sebastian.weirich@iqb.hu-berlin.de", role = c("aut", "cre")),
     person("Martin", "Hecht", role = c("aut")),
@@ -25,7 +25,7 @@ LazyData: true
 LazyLoad: yes
 Suggests: testthat, covr
 NeedsCompilation: no
-Packaged: 2020-09-10 10:47:16 UTC; Sebastian Weirich
+Packaged: 2020-10-19 14:04:21 UTC; Sebastian Weirich
 Author: Sebastian Weirich [aut, cre],
   Martin Hecht [aut],
   Karoline Sachse [aut],
@@ -33,4 +33,4 @@ Author: Sebastian Weirich [aut, cre],
   Nicole Mahler [aut]
 Maintainer: Sebastian Weirich <sebastian.weirich@iqb.hu-berlin.de>
 Repository: CRAN
-Date/Publication: 2020-09-17 11:40:03 UTC
+Date/Publication: 2020-10-19 14:20:06 UTC

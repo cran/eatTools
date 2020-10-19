@@ -1,6 +1,7 @@
-b42851ddc258aa1a1d30afda008b1758 *DESCRIPTION
-06c4a1170107441af474511ce37d5999 *NAMESPACE
-acb0b33299f5e76f525046e9bad34e43 *R/asNumericIfPossible.R
+2510ae02c5fb77347f490e00deece583 *DESCRIPTION
+f17bf1f412f81e68d8c73380d3c6e15a *NAMESPACE
+dfbd697d0d8c86f99282d225eb56111a *NEWS.md
+e818315a85ca7a27a733f097669326d1 *R/asNumericIfPossible.R
 76df1b3115169968efa9ffd959c7b91a *R/catch_asNumericIfPossible.R
 a95fff145f3b882eae2948b12e32f0b7 *R/contr.wec.weighted.r
 7501bde6d231e6ccd087a07fd601f4d2 *R/descr.r
@@ -17,8 +18,8 @@ b98a61adc4e7c8d16d7e49dfe8d227db *R/num.to.cat.r
 66086018f5176b751e417b8d59eefca4 *R/wideToLong.r
 76d16fddd15a3b9f2803f737a9217813 *R/wtdTable.r
 6db5994b4aa32d94990785250b57bb75 *R/wtdVar.r
-3c49693fc51da43f226f3b1f6fff89c4 *README.md
-e58f0e119d27f52c126564410279ab2c *man/asNumericIfPossible.Rd
+f379bcdec1373187102afa4d42af0d44 *README.md
+aefa5381d532215b4ba5b00e20f603bc *man/asNumericIfPossible.Rd
 d1d6b5db2f85aa44f98b5e88c78f4391 *man/catch_asNumericIfPossible.Rd
 14e573c36e1e867cf94d259082246f06 *man/contr.wec.weighted.Rd
 da0b6b70c388a1654e62b438b6e48674 *man/crop.Rd
@@ -45,7 +46,7 @@ dce1e1e32cc914798956165e406f1c5b *man/wideToLong.rd
 291c391b6be96b602549e1023fba56cb *tests/testthat/helper_hmisc_wtdtable.RDS
 8c02a697aba16217511982a6fd1af95f *tests/testthat/helper_hmisc_wtdvar.RDS
 40d7b398f6061e5f66c5b36076291d8e *tests/testthat/helper_matcars_descr.rds
-d54290a77686aede33011e4ad73bb8d0 *tests/testthat/test_asNumericIfPossible.R
+2398c6a93ca65fcd29fb4343f38b5466 *tests/testthat/test_asNumericIfPossible.R
 81eb50f95eaed834b30c10af0d8b5d9e *tests/testthat/test_catch_asNumericIfPossible.R
 c99b4f26f1f7321ae6e573ccbe0cf722 *tests/testthat/test_contr.wec.weighted.R
 195f090510be788d4e8fab8c0106fec6 *tests/testthat/test_descr.R
