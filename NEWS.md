@@ -1,3 +1,7 @@
+# eatTools 0.7.1
+
+* new function `roundDF` rounds all numeric variables in a `data.frame`
+
 # eatTools 0.7.0
 
 * new function `na_omit_selection()` drops rows containing missing values in selected columns

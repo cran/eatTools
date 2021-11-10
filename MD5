@@ -1,6 +1,6 @@
-87d2dffb99f25267ffd93fec110b418f *DESCRIPTION
-d220e97c4acf05dbe3777755f2c2f138 *NAMESPACE
-e6e92f02928d7e3f8b0c42b14da154c4 *NEWS.md
+d78e13cd58c54c4e5dba8da056f4750c *DESCRIPTION
+ff46af4bfcfde2916757e2e68208676c *NAMESPACE
+3080026fdca72a484bbc9a4e1012be51 *NEWS.md
 6db41159b298205b41fda468056aae92 *R/addLeadingZeros.R
 e818315a85ca7a27a733f097669326d1 *R/asNumericIfPossible.R
 76df1b3115169968efa9ffd959c7b91a *R/catch_asNumericIfPossible.R
@@ -14,8 +14,9 @@ d93922469b2b42002d6b82557072be8f *R/multiseq.r
 25ce5d8eeb037c04eef7d0cdc6a9692d *R/na_omit_selection.r
 b98a61adc4e7c8d16d7e49dfe8d227db *R/num.to.cat.r
 45ddf3886a4b09f1a286df04a1563d64 *R/readMultisep.R
-15d61fb6ebb3b2b73536f146cb263fa9 *R/recodeLookup.r
+0446f1f9015aabbd3f68fd3333ed28a0 *R/recodeLookup.r
 1286a8c742b73ecb0978a84784037307 *R/remove_funs.R
+1af0060f6903872adbd6698759f54007 *R/roundDF.R
 5929eea4c5cd8c4de3fc56532b5e6532 *R/set.col.type.r
 1364c2077c8edb375fd4549fe11c51b6 *R/tablePattern.r
 1e11a398b5c805449dc8c896287e3e1f *R/tableUnlist.r
@@ -23,7 +24,7 @@ b98a61adc4e7c8d16d7e49dfe8d227db *R/num.to.cat.r
 3a93e326e49fda4beb059787c38bfea2 *R/wideToLong.r
 76d16fddd15a3b9f2803f737a9217813 *R/wtdTable.r
 6db5994b4aa32d94990785250b57bb75 *R/wtdVar.r
-d2604360b7bce1a54059ea8c7b0ec138 *README.md
+b393348609eb017c4171bfa4c9211e67 *README.md
 506589be0a90cf2fe285aed3e1baa8e4 *man/addLeadingZeros.Rd
 aefa5381d532215b4ba5b00e20f603bc *man/asNumericIfPossible.Rd
 d1d6b5db2f85aa44f98b5e88c78f4391 *man/catch_asNumericIfPossible.Rd
@@ -45,6 +46,7 @@ a53ea736880d7b6f317f59f9d07aaf6d *man/recodeLookup.rd
 81c396181b74aaaae42e52eae02c80a3 *man/removeNonNumeric.Rd
 a2e909ea5b3ad553be529508e04e41f6 *man/removeNumeric.Rd
 6c51f31f18405ce4a24ef9684110c5b3 *man/removePattern.Rd
+f8e0fc5648df9b773660557f066fe3aa *man/roundDF.Rd
 cd377f23fe768756a5a560b6cd8ae9eb *man/set.col.type.Rd
 59479f08fade90f7a15235ab2e1d7021 *man/tablePattern.Rd
 09c953bcfbd76a31ca6b4994f3c6573f *man/tableUnlist.rd
@@ -66,8 +68,9 @@ fa6eadea9e71d7f7177ccfebc50dbc01 *tests/testthat/test_do_call_rbind_withName.R
 d41d8cd98f00b204e9800998ecf8427e *tests/testthat/test_facToChar.R
 9990d36163977ee54d200d08b25dd9e2 *tests/testthat/test_insert.col.R
 d04ebbd58af57f6f8d8f3a142b986f15 *tests/testthat/test_multiseq.R
-91155ef80cd0986f9c22982cc8e97966 *tests/testthat/test_recodeLookup.R
+0e4e1a568b5df6e349f6df0410964e4d *tests/testthat/test_recodeLookup.R
 b12786feaac12c28d11606c5757e4e52 *tests/testthat/test_remove_funs.R
+217568acf828be5c96494c68fee0ceb1 *tests/testthat/test_roundDF.R
 bc874a93cfec17b338aec31533a5fe91 *tests/testthat/test_set.col.type.R
 157797eb2c9e5eccdbbc58680ea3a012 *tests/testthat/test_tablePattern.r
 d4c92c6761fd2244f354c1bb52f4f24e *tests/testthat/test_tableUnlist.R
