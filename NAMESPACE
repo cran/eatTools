@@ -17,6 +17,9 @@ export(insert.col)
 export(whereAre)
 export(recodeLookup)
 export(roundDF)
+export(pwc)
+export(mergeAttr)
+export(makeDataFrame)
 
 # eatGADS usage
 export(catch_asNumericIfPossible)
@@ -41,5 +44,5 @@ export(wtdVar)
 export(na_omit_selection)
 
 ### imports
-importFrom("stats", weighted.mean, median, na.omit, sd, var, t.test, contr.treatment)
+importFrom("stats", weighted.mean, median, na.omit, sd, var, t.test, contr.treatment, cor)
 import("data.table")
