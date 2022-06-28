@@ -1,3 +1,8 @@
+# eatTools 0.7.3
+
+* new function `print_and_capture()` mainly for internal use in `eatRep` and `eatCodebook` packages allows for easy integration of (small) tables into (error) messages
+* added some unit tests
+
 # eatTools 0.7.2
 
 * new function `makeDataFrame()` for internal use in `eatRep` and `eatModel` packages converts `tibbles` and `data.tables` to data.frame

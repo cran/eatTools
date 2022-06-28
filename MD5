@@ -1,6 +1,6 @@
-1732f5d8fde4f691b731ae21969133eb *DESCRIPTION
-fe8740824ab79cc2920d1099b2b18566 *NAMESPACE
-9dce29238016e686c278cf23b02ead5f *NEWS.md
+ae914e130f4d3ac48ffc80dd1240463a *DESCRIPTION
+2fc09c93ec4f0ab8b8aee0d6fa86fcd2 *NAMESPACE
+c9f816b7807574a867406d6b27d8b325 *NEWS.md
 6db41159b298205b41fda468056aae92 *R/addLeadingZeros.R
 e818315a85ca7a27a733f097669326d1 *R/asNumericIfPossible.R
 76df1b3115169968efa9ffd959c7b91a *R/catch_asNumericIfPossible.R
@@ -11,10 +11,11 @@ bbb043b326c3e33963917397da9ba4d4 *R/do_call_rbind_withName.R
 e1f72c9ac79360acbd6371dd7c74f3d4 *R/facToChar.r
 9f25ed75b9879606295c5c434ac52274 *R/insert.col.r
 d3951d26e566dbab0fbb8443cd411722 *R/makeDataFrame.r
-98104ecfab8684980c14d908b1449978 *R/mergeAttr.r
+20e0b39b418180951b8a9b29306894c7 *R/mergeAttr.r
 d93922469b2b42002d6b82557072be8f *R/multiseq.r
 25ce5d8eeb037c04eef7d0cdc6a9692d *R/na_omit_selection.r
 b98a61adc4e7c8d16d7e49dfe8d227db *R/num.to.cat.r
+44fb1225db53ae8cab1d5099f5a3d700 *R/print_and_capture.r
 5a1fce709ad34637facb0c3b15829801 *R/pwc.r
 45ddf3886a4b09f1a286df04a1563d64 *R/readMultisep.R
 0446f1f9015aabbd3f68fd3333ed28a0 *R/recodeLookup.r
@@ -46,6 +47,7 @@ dc98e59d1c04b607de1c66c2605c0289 *man/halveString.rd
 090abc963d29b603c3bcf9fceeb1b6d5 *man/multiseq.Rd
 b3d7d7dc0eedc4c4fbcc32fc13fb6568 *man/na_omit_selection.rd
 0a157de0fc529b6022bc5d5ba5cd51ab *man/num.to.cat.rd
+7a8ee5c1d8790c4382808f0669346d98 *man/print_and_capture.rd
 b10cd5b88a6405d743b721ffec3bf1a7 *man/pwc.rd
 18049a11efe768ffd0ad995a09633496 *man/readMultisep.Rd
 a53ea736880d7b6f317f59f9d07aaf6d *man/recodeLookup.rd
@@ -66,6 +68,7 @@ e12cd59876838b5bbebd8b1006d81b49 *tests/testthat/helper_haven_lookup.RDS
 8c02a697aba16217511982a6fd1af95f *tests/testthat/helper_hmisc_wtdvar.RDS
 40d7b398f6061e5f66c5b36076291d8e *tests/testthat/helper_matcars_descr.rds
 7fbb57fdf1c3e4d338105b1c5b7e9890 *tests/testthat/helper_tbl_mtcars.RDS
+8fe2b4fb5ddb650922c48cab1975f230 *tests/testthat/test_addLeadingZeros.R
 2398c6a93ca65fcd29fb4343f38b5466 *tests/testthat/test_asNumericIfPossible.R
 81eb50f95eaed834b30c10af0d8b5d9e *tests/testthat/test_catch_asNumericIfPossible.R
 c99b4f26f1f7321ae6e573ccbe0cf722 *tests/testthat/test_contr.wec.weighted.R
@@ -73,10 +76,11 @@ c99b4f26f1f7321ae6e573ccbe0cf722 *tests/testthat/test_contr.wec.weighted.R
 fa6eadea9e71d7f7177ccfebc50dbc01 *tests/testthat/test_do_call_rbind_withName.R
 56e42b217df27cb074651dd819dae907 *tests/testthat/test_existsBackgroundVariables.R
 d41d8cd98f00b204e9800998ecf8427e *tests/testthat/test_facToChar.R
-9990d36163977ee54d200d08b25dd9e2 *tests/testthat/test_insert.col.R
+ec638cd15ec4f9437ab9101c627780e9 *tests/testthat/test_insert.col.R
 635b3b8967060cbffb4fe0433096e717 *tests/testthat/test_makeDataFrame.R
-a8a0401dee50ba1852dc59a21e0b1bcc *tests/testthat/test_mergeAttr.R
+32e9e2b0bd991a542d598a3cc8074adf *tests/testthat/test_mergeAttr.R
 d04ebbd58af57f6f8d8f3a142b986f15 *tests/testthat/test_multiseq.R
+0f863b0998d18f9cadaabd007c450a82 *tests/testthat/test_print_and_capture.R
 77c9f56e29f4a0a139f79c8dca53cf31 *tests/testthat/test_pwc.R
 0e4e1a568b5df6e349f6df0410964e4d *tests/testthat/test_recodeLookup.R
 b12786feaac12c28d11606c5757e4e52 *tests/testthat/test_remove_funs.R
