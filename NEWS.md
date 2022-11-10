@@ -1,3 +1,10 @@
+# eatTools 0.7.4
+
+* new function `rbind_common()` rbinds a list of data.frames and selects only common columns
+* bug fix in `mergeAttr()` when variables have more than one class
+* `mergeAttr()` gives warning if merging variables have NAs
+* optional colnames argument in `halveString()` function 
+
 # eatTools 0.7.3
 
 * new function `print_and_capture()` mainly for internal use in `eatRep` and `eatCodebook` packages allows for easy integration of (small) tables into (error) messages
