@@ -1,10 +1,23 @@
-mergeAttr <- function ( x, y, by = intersect(names(x), names(y)), by.x = by, by.y = by, all = FALSE, all.x = all, all.y = all, sort = TRUE, suffixes = c(".x",".y"), setAttr = TRUE, onlyVarValLabs = TRUE, homoClass = TRUE, unitName = "unit", xName = "x", yName = "y", verbose = c("match", "unique", "class", "dataframe")) {
+mergeAttr <- function ( x, y, by = intersect(names(x), names(y)), by.x = by, by.y = by, all = FALSE, all.x = all, all.y = all, sort = TRUE, suffixes = c(".x",".y"), setAttr = TRUE, onlyVarValLabs = TRUE, homoClass = TRUE, unitName = "unit", xName = "x", yName = "y", verbose = c("match", "unique", "class", "dataframe", "common")) {
      ### verbose setzen
-             verb  <- setVerbose(verbose, choices = c("match", "unique", "class", "dataframe"))
+             verb  <- setVerbose(verbose, choices = c("match", "unique", "class", "dataframe", "common"))
      ### das muessen data.frames sein
-             x <- makeDataFrame(x)
-             y <- makeDataFrame(y)
-             byvars<- data.frame ( x=by.x, y=by.y, clx = sapply(x[,by.x,drop=FALSE], FUN = function(z) {paste(class(z),collapse="_")}), cly = sapply(y[,by.y,drop=FALSE], FUN = function(z) {paste(class(z),collapse="_")}), stringsAsFactors = FALSE)
+             x     <- makeDataFrame(x)
+             y     <- makeDataFrame(y)
+             byvars<- data.frame ( x=by.x, y=by.y,
+                clx = sapply(x[,by.x,drop=FALSE], FUN = function(z) {paste(class(z),collapse="_")}),
+                cly = sapply(y[,by.y,drop=FALSE], FUN = function(z) {paste(class(z),collapse="_")}), stringsAsFactors = FALSE)
+     ### schauen, ob zusaetzlich zu den by-Variablen noch weitere gemeinsame Variablen in den Datensaetzen existieren
+     ### die kriegen dann ja das suffix. Fall ja, message ausgeben
+             comm  <- intersect(colnames(x), colnames(y))
+             if ("common" %in% verb) {
+                commby<- setdiff(comm, unique(unlist(byvars[,1:2])))
+                if(length(commby)>0) {
+                    message("Additional common variables (beyond the 'by'-variables) found: '",
+                       paste(commby, collapse="', '"), "'. Add suffixes '",paste(suffixes, collapse="', '"),
+                       "' to these variables in the result data.frame.")
+                }
+             }
      ### missings auf merge-Variablen?
              foox  <- lapply(byvars[,"x"], FUN = function (vx) { if ( length(which(is.na(x[,vx]))) > 0) {warning(paste0("Merging variable '",vx,"' in dataset 'x' contains ",length(which(is.na(x[,vx])))," missing values."))}})
              fooy  <- lapply(byvars[,"y"], FUN = function (vy) { if ( length(which(is.na(y[,vy]))) > 0) {warning(paste0("Merging variable '",vy,"' in dataset 'y' contains ",length(which(is.na(y[,vy])))," missing values."))}})
@@ -28,6 +41,13 @@ mergeAttr <- function ( x, y, by = intersect(names(x), names(y)), by.x = by, by.
              }
              if ("unique" %in% verb) {if ( length(xby) != length(unique(xby))) { message("Merging levels are not unique in data set '", xName, "'.")}}
              if ("unique" %in% verb) {if ( length(yby) != length(unique(yby))) { message("Merging levels are not unique in data set '", yName, "'.")}}
+     ### pruefen, ob die Kombinationen der levels der by-variablen in dem anderen datensatz enthalten sind ... das natuerlich nur, wenn es mehr als eine by-variable gibt
+             if ( nrow(byvars)>1) {
+                   nix   <- setdiff(yby, xby)
+                   if ("match" %in% verb && length(nix)>0 ) {message(paste0(length(nix), " of ",length(unique(yby)), " " , unitName,"(s) of merging variable combination '",paste(byvars[,"y"], collapse= "'+'"),"' from data set '",yName,"' not included in data set '",xName,"'."))}
+                   niy   <- setdiff(xby, yby)
+                   if ("match" %in% verb && length(niy)>0 ) {message(paste0(length(niy), " of ",length(unique(xby)), " " , unitName,"(s) of merging variable combination '",paste(byvars[,"x"], collapse= "'+'"),"' from data set '",xName,"' not included in data set '",yName,"'."))}
+             }
      ### von allen by-variablen die Klassen homogenisieren, falls gewuenscht
              for ( i in 1:nrow(byvars) ) {
                    if ( length(unique(unlist(byvars[i,c("clx", "cly")]))) > 1 ) {

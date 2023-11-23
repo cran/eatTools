@@ -1,3 +1,4 @@
+S3method(asNumericIfPossible, default)
 S3method(asNumericIfPossible, logical)
 S3method(asNumericIfPossible, numeric)
 S3method(asNumericIfPossible, character)
@@ -26,6 +27,7 @@ export(rbind_common)
 export(catch_asNumericIfPossible)
 export(do_call_rbind_withName)
 export(readMultisep)
+export(seq2)
 
 # eatRep usage
 export(existsBackgroundVariables)
@@ -44,6 +46,7 @@ export(wtdTable)
 export(wtdVar)
 export(na_omit_selection)
 export(print_and_capture)
+export(makeTria)
 
 ### imports
 importFrom("stats", weighted.mean, median, na.omit, sd, var, t.test, contr.treatment, cor)
