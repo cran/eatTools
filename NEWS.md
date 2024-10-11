@@ -1,3 +1,13 @@
+# eatTools 0.7.7.9000
+
+* minor bugfixes when integers are very large in `addLeadingZerosToCharInt()` (Previously an error message was displayed.)
+* minor bugfixes in the messages of `mergeAttr()`
+* `recodeLookup()` return the original vector if the the user does not provide any recode table (i.e., if the argument is NULL). (Previously an error message was displayed.)
+* minor bugfixes in the display of `makeTria()`
+* messages can be turned off in `makeDataFrame()`
+* package sticker added
+* bugfixes in `gsubAll()`: Does not longer allow using regular expressions (internally, `gsub(..., fixed = TRUE)` is used). Function now begins with the longest string to avoid repeated modifications if strings in "old" match each other. See function documentation for further details.
+
 # eatTools 0.7.6
 
 * add argument checks using the checkmate package
@@ -12,7 +22,7 @@
 * added `seq2()` for sequence generation
 * adapt `halveString()` for patterns with more than 1 character
 * add messages to `mergeAttr()` if combinations of merge variables from one data set do not occur in the other data set
-* add messages to `mergeAttr()` if the two `data.frames` intended to merge contain additional common variables (beyond thy `by`-variables)
+* add messages to `mergeAttr()` if the two `data.frames` intended to merge contain additional common variables (beyond the `by`-variables)
 * `makeDataFrame()` gives warning/errors if data.frame has less rows than expected at the least.
 * `existsBackgroundVariables()` gives warning/errors if variables have missing values, depending on how critical the missing values are considered to be
 
