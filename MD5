@@ -1,9 +1,10 @@
-bc01b5225186090c152f2a10552fb7c3 *DESCRIPTION
-30cf9b1a0f37e47d71caa846a0f220d6 *NAMESPACE
-c00abbd6ea4b31b598cec8842569db07 *NEWS.md
+4175105debd17c1fef90364c4cc9bdf4 *DESCRIPTION
+43c41cf4dc78eff27aa8d464a4d34469 *NAMESPACE
+2ee93cbc33ae1cc761809dfe48378124 *NEWS.md
 65e2982086f0abf18f09c6b96cbf7aab *R/addLeadingZeros.R
 6a8643ad564c93b63b093188ead59566 *R/asNumericIfPossible.R
 5f1edf422c7c5f857a4bf45d107aaada *R/catch_asNumericIfPossible.R
+60526b76b183aad54c9b2fdc5021b04b *R/cleanifyString.r
 45980ebd97276b81fdc2ff17d3d68332 *R/contr.wec.weighted.r
 3b081f242082e1e7251131d4eac523dc *R/descr.r
 ae4b68859c1a8290fe4e6cbee6be2387 *R/do_call_rbind_withName.R
@@ -36,6 +37,7 @@ e7cffe1575ab2b721d76286a98fe19b9 *README.md
 84cc38c115c953b855938a5330179345 *man/addLeadingZeros.Rd
 e26a53981b278b1c35fa91bd6d75cbe6 *man/asNumericIfPossible.Rd
 a5c61c9069eff6b15cba1b764f8eb721 *man/catch_asNumericIfPossible.Rd
+15cc3264bd784a0908ac1349ba216717 *man/cleanifyString.Rd
 d8468335e70d0114c2fe13b24e0d5893 *man/contr.wec.weighted.Rd
 fa1589da9b87653202773fa1c9599ac2 *man/crop.Rd
 0d0eb520cdc37bd1e5b28722240b0346 *man/descr.Rd
@@ -82,6 +84,7 @@ e12cd59876838b5bbebd8b1006d81b49 *tests/testthat/helper_haven_lookup.RDS
 5d15fdfd3c5208215e856306b734fcd2 *tests/testthat/test_addLeadingZeros.R
 b26af485f63364c1da56a03de0d3c011 *tests/testthat/test_asNumericIfPossible.R
 829a5d738933af5055b74f307bd26c6b *tests/testthat/test_catch_asNumericIfPossible.R
+8c9cf55de5641198117dd30e506bd94f *tests/testthat/test_cleanifyString.R
 c99b4f26f1f7321ae6e573ccbe0cf722 *tests/testthat/test_contr.wec.weighted.R
 195f090510be788d4e8fab8c0106fec6 *tests/testthat/test_descr.R
 e7ce0a15432176dab476bff3d064d887 *tests/testthat/test_do_call_rbind_withName.R
@@ -97,7 +100,7 @@ f6d8f747e306296cab22f19973b8a252 *tests/testthat/test_print_and_capture.R
 2c68c1c03ca523bc2ccba5fac60e6728 *tests/testthat/test_rbindCommon.R
 4c9c5b2b0f3c51cc86f7f96447fbb8fa *tests/testthat/test_readMultisep.R
 8a5bfeae385ae43906e4822bf07b009e *tests/testthat/test_recodeLookup.R
-2675b7b0c1aabe731056e84c8c845b15 *tests/testthat/test_remove_funs.R
+9b067a214ea4fb5e6bc1bcabb87cf056 *tests/testthat/test_remove_funs.R
 217568acf828be5c96494c68fee0ceb1 *tests/testthat/test_roundDF.R
 a75c9009a723a2e4fd8ada750ab9d4e5 *tests/testthat/test_seq2.R
 bc874a93cfec17b338aec31533a5fe91 *tests/testthat/test_set.col.type.R
