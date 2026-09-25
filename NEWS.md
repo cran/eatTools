@@ -1,3 +1,8 @@
+# eatTools 0.7.10
+
+* bugfix in `halveString()`: The split failed if the pattern was longer than 1 and was to be split after the last occurrence.
+* bugfix in `facToChar()`: class of each variable is now detected via `inherits()` instead of `class()`
+
 # eatTools 0.7.9
 
 * new exemplary dataset `data.timss1` borrowed from the BIFIEsurvey package for illustration purposes of the `checkBackgroundVariables()` function
